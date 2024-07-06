@@ -10,7 +10,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.get('/',()=>console.log("sorry this only for my personal Use"))
+app.get('/',(req,res)=>{res.send("How can i help you")})
 app.post('/contactus',async(req,res)=>{
     await Schema.create(req.body)
     let result=mailing(req.body.email,req.body.message)
