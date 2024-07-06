@@ -99,7 +99,7 @@ const html= HTML
 const receiver={
     from:process.env.MAIL,
     to:mails,
-    subject:"Inquiry Regarding  Node.Js Developer Role at NPlus Technologies,",
+    subject:"Thank You for Contacting",
     text:'Job Vacancy',
     html:html, 
 }
