@@ -26,6 +26,6 @@ app.post('/contactus',async(req,res)=>{
     }
     setTimeout(()=>{ 
         res.status(200).send({response:true,text:"Thank you for Contacting"})
-    },2000) 
+    },500) 
 })
 app.listen(5000,()=>console.log('Server listen in 5000'))
