@@ -7,7 +7,7 @@ const mongoose=require('mongoose')
 const {mailing}=require('./mail/mail')
 const dbURI=process.env.DB
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-app.use(cors({  origin: 'https://sivaprasath2004.github.io/portfolio'}))
+app.use(cors({  origin: 'https://sivaprasath2004.github.io/portfolio/'}))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.get('/',()=>console.log("sorry this only for my personal Use"))
