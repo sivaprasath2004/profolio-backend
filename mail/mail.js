@@ -100,7 +100,7 @@ const receiver={
     from:process.env.MAIL,
     to:mails,
     subject:"Thank You for Contacting",
-    text:'Job Vacancy',
+    text:'Keep connected with me..!',
     html:html, 
 }
 const sendMail=async(sender,receiver)=>{
