@@ -9,7 +9,9 @@ const dbURI=process.env.DB
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 const corsOptions = {
   origin: 'https://sivaprasath2004.github.io',
-  optionsSuccessStatus: 200 
+   methods: ['GET', 'POST'], // Allow only GET and POST requests
+  allowedHeaders: ['Content-Type'], // Allow only headers with Content-Type
+  optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions))
 app.use(express.json())
